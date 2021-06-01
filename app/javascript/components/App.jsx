@@ -13,10 +13,8 @@ const App = () => {
             right: 5,
             top: 5,
         }} href="https://github.com/andre-dom/temporary-notes" target="_blank" >
-              <img src={GithubImage} alt="Github" width="50" height="50"/>
+              <img src={GithubImage} alt="Github" width="40" height="40"/>
           </a>
-
-
         <Switch>
             <Route exact path='/' component={NewPost}/>
             <Route exact path='/posts/:uuid' component={Post}/>
