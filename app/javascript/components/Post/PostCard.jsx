@@ -1,7 +1,7 @@
 import React from 'react'
 import { Redirect, Link } from 'react-router-dom'
-import { Card } from  'react-bootstrap'
-import Countdown from 'react-countdown';
+import { Card, Button } from  'react-bootstrap'
+import Countdown from 'react-countdown'
 
 const PostCard = ( { post } ) => {
     console.log(post)
