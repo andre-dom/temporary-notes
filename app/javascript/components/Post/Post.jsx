@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState, useEffect, Fragment } from 'react'
 import Axios from 'axios'
 import { Card, Spinner, Button } from  'react-bootstrap'
 import PostCard from './PostCard'
@@ -23,14 +23,16 @@ const Post = (props) => {
 
     if(!loaded) {
         return(
-            <Card className="mx-5 mt-5 w-75">
-                <Card.Body className="d-flex justify-content-center">
-                    <Spinner animation="border" variant="primary" />
-                </Card.Body>
-                <Card.Footer className="text-muted d-flex justify-content-between">
-                    <p> </p>
-                </Card.Footer>
-            </Card>
+            <Fragment>
+                <Card className="mx-5 mt-5 w-75">
+                    <Card.Body className="d-flex justify-content-center">
+                        <Spinner animation="border" variant="primary" />
+                    </Card.Body>
+                    <Card.Footer className="text-muted d-flex justify-content-between">
+                        <p> </p>
+                    </Card.Footer>
+                </Card>
+            </Fragment>
         )
     }
 
